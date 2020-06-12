@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Admin Pannel</title>
+    <link rel="stylesheet" href="app/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app/fontawesome/css/all.css">
+    <link rel="stylesheet" href="app/css/style.css">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-2 col-lg-3 col-md-4 sidebar fixed-top">
+              <a class="navbar-brand d-block text-center" href="#">
+                <img src="app/img/amex.png" alt="" style="width: 100px;">
+              </a>
+
+              <ul class="navbar-nav flex-column" id="sidebar_wapper">
+                <li class="nav-item sidebar-item current">
+                  <a class="nav-link sidebar-item-link text-white current " href="#">Home <span class="sr-only">(current)</span></a>
+
+                </li>
+                <li class="nav-item sidebar-item sidebar_dropdown">
+                  <a class="nav-link sidebar-item-link text-white" href="" data-toggle="collapse" data-target="#category_collapse">Category</a>
+                  <div class="collapse mx-2" data-parent="#sidebar_wapper" id="category_collapse">
+
+                    <ul class="navbar-nav flex-column">
+                      <li class="nav-item sidebar-item">
+                        <a class="nav-link sidebar-item-link text-white current" href="#">All Category</a>
+                      </li>
+                      <li class="nav-item sidebar-item">
+                        <a class="nav-link sidebar-item-link text-white" href="#">Create Category</a>
+                      </li>
+
+                    </ul>
+
+                  </div>
+                </li>
+
+                <li class="nav-item sidebar-item sidebar_dropdown">
+                  <a class="nav-link sidebar-item-link text-white" href="" data-toggle="collapse" data-target="#product_collapse">Product</a>
+                  <div class="collapse mx-2" data-parent="#sidebar_wapper" id="product_collapse">
+
+                    <ul class="navbar-nav flex-column">
+                      <li class="nav-item sidebar-item">
+                        <a class="nav-link sidebar-item-link text-white current" href="#">Store Product</a>
+                      </li>
+                      <li class="nav-item sidebar-item">
+                        <a class="nav-link sidebar-item-link text-white" href="#">All Products</a>
+                      </li>
+
+                    </ul>
+
+                  </div>
+                </li>
+
+
+
+              </ul>
+
+            </div>
+
+            <div class="col-xl-10 col-lg-9 col-md-8 fixed-top top-navbar ml-auto py-2">
+
+              <div class="row align-items-center">
+              <div class="col-md-4">
+                <h4 class="text-uppercase text-light mb-0">Dashboard</h4>
+              </div>
+              <div class="col-md-5">
+                <form>
+                  <div class="input-group">
+                    <input type="text" class="form-control search-input text-white" placeholder="Search...">
+                    <button type="button" class="btn search-button text-danger"><i class="fas fa-search"></i></button>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-3">
+                <ul class="navbar-nav">
+                  <li class="nav-item icon-parent"><a href="#" class="nav-link"><i
+                        class="fas fa-comments text-danger fa-lg"></i></a></li>
+                  <li class="nav-item icon-parent"><a href="#" class="nav-link"><i
+                        class="fas fa-bell text-danger fa-lg"></i></a></li>
+                  <li class="nav-item ml-md-auto icon-parent"><a href="" class="nav-link" ><i class="fas fa-sign-out-alt text-danger fa-lg"></i></a></li>
+                  <!-- data-toggle="modal"  data-target="#sign-out" -->
+                </ul>
+              </div>
+            </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-10 col-lg-9 col-md-8 ml-auto mt-5 ">
+          <div class="row mt-2 mx-1">
+
+            <div id="accordion">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Collapsible Group Item #1
+                    </button>
+                  </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Collapsible Group Item #2
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" >
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Collapsible Group Item #3
+                  </button>
+                  </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" >
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+    <script type="text/javascript" src="app/js/jquery.min.js"></script>
+    <script type="text/javascript" src="app/js/popper.min.js"></script>
+    <script type="text/javascript" src="app/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="app/js/javascript.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/31a26a4739.js" crossorigin="anonymous"></script> -->
+
+  </body>
+</html>

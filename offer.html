@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Offers</title>
+    <link rel="stylesheet" href="app/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app/fontawesome/css/all.css">
+    <link rel="stylesheet" href="app/css/style.css">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-2 col-lg-3 col-md-4 sidebar fixed-top">
+              <a class="navbar-brand d-block text-center" href="#">
+                <img src="app/img/amex.png" alt="" style="width: 100px;">
+              </a>
+
+              <ul class="navbar-nav flex-column" id="sidebar_wapper">
+                <li class="nav-item sidebar-item current">
+                  <a class="nav-link sidebar-item-link text-white " href="index.html"> <i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+
+                </li>
+                <li class="nav-item sidebar-item">
+                  <a class="nav-link sidebar-item-link text-white" href="category.html"><i class="fas fa-tag mr-1"></i>Category</a>
+                </li>
+
+                <li class="nav-item sidebar-item ">
+                  <a class="nav-link sidebar-item-link text-white" href="product.html"><i class="fas fa-shopping-cart"></i> Product</a>
+                </li>
+                <li class="nav-item sidebar-item ">
+                  <a class="nav-link sidebar-item-link text-white current" href="offer.html"><i class="fas fa-gift"></i> Offer</a>
+                </li>
+                <li class="nav-item sidebar-item ">
+                  <a class="nav-link sidebar-item-link text-white" href="orders.html"><i class="fas fa-file"></i> Orders</a>
+                </li>
+                <li class="nav-item sidebar-item ">
+                  <a class="nav-link sidebar-item-link text-white" href="customers.html"><i class="fas fa-user"></i> Customers</a>
+                </li>
+              </ul>
+
+            </div>
+
+            <div class="col-xl-10 col-lg-9 col-md-8 fixed-top top-navbar ml-auto py-2">
+
+              <div class="row align-items-center">
+              <div class="col-md-4">
+                <h4 class="text-uppercase text-light mb-0">Dashboard</h4>
+              </div>
+              <div class="col-md-5">
+                <form>
+                  <div class="input-group">
+                    <input type="text" class="form-control search-input text-white" placeholder="Search...">
+                    <button type="button" class="btn search-button text-danger"><i class="fas fa-search"></i></button>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-3">
+                <ul class="navbar-nav">
+                  <li class="nav-item icon-parent"><a href="#" class="nav-link"><i
+                        class="fas fa-comments text-danger fa-lg"></i></a></li>
+                  <li class="nav-item icon-parent"><a href="#" class="nav-link"><i
+                        class="fas fa-bell text-danger fa-lg"></i></a></li>
+                  <li class="nav-item ml-md-auto icon-parent"><a href="" class="nav-link" ><i class="fas fa-sign-out-alt text-danger fa-lg"></i></a></li>
+                  <!-- data-toggle="modal"  data-target="#sign-out" -->
+                </ul>
+              </div>
+            </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-10 col-lg-9 col-md-8 ml-auto mt-5 ">
+
+          <div class="col-lg-8 offset-lg-2">
+
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Offer Title</th>
+                  <th scope="col">Offer For</th>
+                  <th scope="col">Discount Rate</th>
+                  <th scope="col">Count</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr scope="row">
+                  <td>1</td>
+                  <td>Offer Title</td>
+                  <td>Delivary Charge</td>
+                  <td>Free</td>
+                  <td>100</td>
+                  <td>
+                    <span class="btn btn-secondary text-white btn-sm "> <i class="fas fa-edit"></i> </span>
+                    <span class="btn btn-secondary text-white btn-sm "> <i class="fas fa-trash"></i> </span>
+                  </td>
+                </tr>
+              </tbody>
+
+
+            </table>
+            <div class="add_somethig_icon bg-dark text-white" data-toggle="modal" data-target="#add_offer_modal">
+              <i class="fas fa-plus fa-lg"></i>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="modal fade" id="add_offer_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-dark text-white">
+            <h5 class="modal-title" id="exampleModalLongTitle">Add Offer</h5>
+            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="" action="" method="post">
+              <div class="form-group">
+                <label for="">Offer Name</label>
+                <input type="text" name="product_name" value="" placeholder="Product Name" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="">Description <span>(Optional)</span></label>
+                <textarea name="name" rows="8" cols="80" class="form-control"></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="">Offer applied for</label>
+                <select class="form-control" name="">
+                  <option value="">Single Product</option>
+                  <option value="">Full Cart</option>
+                  <option value="">Delivary Charge</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="">Delivary Charge</label>
+                <select class="form-control" name="">
+                  <option value="">Free</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="">Discount ammount</label>
+                <input type="text" name="" value="" class="form-control" placeholder="Discount ammount">
+              </div>
+
+            </form>
+          </div>
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="app/js/jquery.min.js"></script>
+    <script type="text/javascript" src="app/js/popper.min.js"></script>
+    <script type="text/javascript" src="app/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="app/js/javascript.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/31a26a4739.js" crossorigin="anonymous"></script> -->
+    <script type="text/javascript">
+    
+
+    </script>
+
+  </body>
+</html>

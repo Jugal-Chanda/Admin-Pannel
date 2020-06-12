@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Admin Pannel</title>
+    <link rel="stylesheet" href="app/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app/fontawesome/css/all.css">
+    <link rel="stylesheet" href="app/css/style.css">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-2 col-lg-3 col-md-4 sidebar fixed-top">
+              <a class="navbar-brand d-block text-center" href="#">
+                <img src="app/img/amex.png" alt="" style="width: 100px;">
+              </a>
+
+              <ul class="navbar-nav flex-column" id="sidebar_wapper">
+                <li class="nav-item sidebar-item current">
+                  <a class="nav-link sidebar-item-link text-white " href="index.html"> <i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+
+                </li>
+                <li class="nav-item sidebar-item">
+                  <a class="nav-link sidebar-item-link text-white" href="category.html"><i class="fas fa-tag mr-1"></i>Category</a>
+                </li>
+
+                <li class="nav-item sidebar-item ">
+                  <a class="nav-link sidebar-item-link text-white" href="product.html"><i class="fas fa-shopping-cart"></i> Product</a>
+                </li>
+                <li class="nav-item sidebar-item ">
+                  <a class="nav-link sidebar-item-link text-white" href="offer.html"><i class="fas fa-gift"></i> Offer</a>
+                </li>
+                <li class="nav-item sidebar-item ">
+                  <a class="nav-link sidebar-item-link text-white current" href="orders.html"><i class="fas fa-file"></i> Orders</a>
+                </li>
+                <li class="nav-item sidebar-item ">
+                  <a class="nav-link sidebar-item-link text-white" href="customers.html"><i class="fas fa-user"></i> Customers</a>
+                </li>
+              </ul>
+
+            </div>
+
+            <div class="col-xl-10 col-lg-9 col-md-8 fixed-top top-navbar ml-auto py-2">
+
+              <div class="row align-items-center">
+              <div class="col-md-4">
+                <h4 class="text-uppercase text-light mb-0">Dashboard</h4>
+              </div>
+              <div class="col-md-5">
+                <form>
+                  <div class="input-group">
+                    <input type="text" class="form-control search-input text-white" placeholder="Search...">
+                    <button type="button" class="btn search-button text-danger"><i class="fas fa-search"></i></button>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-3">
+                <ul class="navbar-nav">
+                  <li class="nav-item icon-parent"><a href="#" class="nav-link"><i
+                        class="fas fa-comments text-danger fa-lg"></i></a></li>
+                  <li class="nav-item icon-parent"><a href="#" class="nav-link"><i
+                        class="fas fa-bell text-danger fa-lg"></i></a></li>
+                  <li class="nav-item ml-md-auto icon-parent"><a href="" class="nav-link" ><i class="fas fa-sign-out-alt text-danger fa-lg"></i></a></li>
+                  <!-- data-toggle="modal"  data-target="#sign-out" -->
+                </ul>
+              </div>
+            </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-10 col-lg-9 col-md-8 ml-auto mt-5 ">
+
+          <div class="">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Order ID</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Phone</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Delivary Address</th>
+                  <th scope="col">Ammount</th>
+                  <th scope="col">Payment Mathod</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody class="single_order">
+                <tr scope="row">
+                  <td>1</td>
+                  <td>#UEu8qG5Ma1qSSBmHnqqI</td>
+                  <td>Customer Name1</td>
+                  <td>+880-12345-12345</td>
+                  <td>10-Jul-2020</td>
+                  <td>Aftab Nagar Dhaka</td>
+                  <td>999TK</td>
+                  <td>Cash On</td>
+                  <td>
+                    <span class="pending_status"> <strong>Pending</strong> </span>
+                  </td>
+                </tr>
+                <tr scope="row">
+                  <td>2</td>
+                  <td>#UEu8qG5Ma1qSSBmHnqqI</td>
+                  <td>Customer Name2</td>
+                  <td>+880-12345-12345</td>
+                  <td>10-Jul-2020</td>
+                  <td>Aftab Nagar Dhaka</td>
+                  <td>999TK</td>
+                  <td>Cash On</td>
+                  <td>
+                    <span class="cancel_status"> <strong>Canceled</strong> </span>
+                  </td>
+                </tr>
+                <tr scope="row">
+                  <td>3</td>
+                  <td>#UEu8qG5Ma1qSSBmHnqqI</td>
+                  <td>Customer Name3</td>
+                  <td>+880-12345-12345</td>
+                  <td>10-Jul-2020</td>
+                  <td>Aftab Nagar Dhaka</td>
+                  <td>999TK</td>
+                  <td>Cash On</td>
+                  <td>
+                    <span class="delivered_status"> <strong>Delivered</strong> </span>
+                  </td>
+                </tr>
+              </tbody>
+
+
+            </table>
+            <div class="add_somethig_icon bg-dark text-white">
+              <i class="fas fa-plus fa-lg"></i>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="modal fade" id="order_details_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-dark text-white">
+            <h5 class="modal-title" id="exampleModalLongTitle">Customer Name</h5>
+            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+            <div class="customer_info mb-3">
+              <table class="table table-bordered">
+                <tbody>
+                  <tr>
+                    <td>Name</td>
+                    <td>Customer Name</td>
+                  </tr>
+                  <tr>
+                    <td>Email</td>
+                    <td>customer@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <td>Phone</td>
+                    <td>+880-12345-12345</td>
+                  </tr>
+                  <tr>
+                    <td>Delivary Address</td>
+                    <td>Mirpur Dhaka</td>
+                  </tr>
+                  <tr>
+                    <td>Ammount</td>
+                    <td>5000</td>
+                  </tr>
+                  <tr>
+                    <td>Payment Method</td>
+                    <td>cash On</td>
+                  </tr>
+                </tbody>
+
+              </table>
+
+            </div>
+            <div class="order_details mb-2">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Product Id</th>
+                    <th scope="col">Product Name</th>
+                    <th scope="col">Product Image</th>
+                    <th scope="col">Model</th>
+                    <th scope="col">Qty</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>100</td>
+                    <td>Prodcut1</td>
+                    <td>
+                      <img src="app/img/book1.png" alt="" style="width: 40px; height: 40px;">
+                    </td>
+                    <td>y311</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>105</td>
+                    <td>Prodcut1</td>
+                    <td>
+                      <img src="app/img/book2.png" alt="" style="width: 40px; height: 40px;">
+                    </td>
+                    <td>y311</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>120</td>
+                    <td>Prodcut1</td>
+                    <td>
+                      <img src="app/img/book5.png" alt="" style="width: 40px; height: 40px;">
+                    </td>
+                    <td>y311</td>
+                    <td>3</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+
+
+          </div>
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="app/js/jquery.min.js"></script>
+    <script type="text/javascript" src="app/js/popper.min.js"></script>
+    <script type="text/javascript" src="app/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="app/js/javascript.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/31a26a4739.js" crossorigin="anonymous"></script> -->
+    <script type="text/javascript">
+    $(".single_order tr").click(function() {
+        $('#order_details_modal').modal('show');
+    });
+
+
+    </script>
+
+  </body>
+</html>
